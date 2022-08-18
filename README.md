@@ -3,7 +3,17 @@ Income Verification [with Plaid](https://plaid.com/docs/income/)
 
 Here is a [demo of the Plaid Income flow](https://plaid.com/demo/) (Select Bank Income)
 
-We need to then take the resulting JSON and store in the Durable Object:
+
+So when we get the response from Plaid, we'll store the JSON of the income data in the Durable Object via the Transaction Storage API:
+<https://developers.cloudflare.com/workers/runtime-apis/durable-objects/#transactional-storage-api>
+
+Here is some additional background on Cloudflare Durable Objects:
+
+<https://developers.cloudflare.com/workers/learning/using-durable-objects/>
+<https://blog.cloudflare.com/introducing-workers-durable-objects/>
+<https://blog.cloudflare.com/durable-objects-easy-fast-correct-choose-three/>
+
+Here is the example response from the Plaid Income API:
 
 ```
 {
@@ -263,5 +273,3 @@ We need to then take the resulting JSON and store in the Durable Object:
 ```
 
 
-So when we get the response from Plaid, we'll store the JSON of the income data in the Durable Object via the Transaction Storage API:
-<https://developers.cloudflare.com/workers/runtime-apis/durable-objects/#transactional-storage-api>
