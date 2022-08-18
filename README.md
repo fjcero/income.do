@@ -9,9 +9,9 @@ So when we get the response from Plaid, we'll store the JSON of the income data 
 
 Here is some additional background on Cloudflare Durable Objects:
 
-<https://developers.cloudflare.com/workers/learning/using-durable-objects/>
-<https://blog.cloudflare.com/introducing-workers-durable-objects/>
-<https://blog.cloudflare.com/durable-objects-easy-fast-correct-choose-three/>
+- <https://developers.cloudflare.com/workers/learning/using-durable-objects/>
+- <https://blog.cloudflare.com/introducing-workers-durable-objects/>
+- <https://blog.cloudflare.com/durable-objects-easy-fast-correct-choose-three/>
 
 Here is the example response from the Plaid Income API:
 
