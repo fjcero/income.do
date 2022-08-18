@@ -261,3 +261,7 @@ We need to then take the resulting JSON and store in the Durable Object:
   ]
 }
 ```
+
+
+So when we get the response from Plaid, we'll store the JSON of the income data in the Durable Object via the Transaction Storage API:
+<https://developers.cloudflare.com/workers/runtime-apis/durable-objects/#transactional-storage-api>
